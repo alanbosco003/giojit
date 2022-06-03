@@ -47,7 +47,7 @@ class ArtivaticList extends StatelessWidget {
                                 color: Colors.green[700],
                                 textStyle:
                                     Theme.of(context).textTheme.headline4,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w500,
                                 fontStyle: FontStyle.normal,
                               ),
@@ -61,12 +61,15 @@ class ArtivaticList extends StatelessWidget {
                             style: GoogleFonts.spartan(
                               color: Colors.orange,
                               textStyle: Theme.of(context).textTheme.headline4,
-                              fontSize: 18,
+                              fontSize: 16,
                               fontWeight: FontWeight.w500,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
                         ],
+                      ),
+                      const SizedBox(
+                        height: 5,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
