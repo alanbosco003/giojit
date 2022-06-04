@@ -52,7 +52,7 @@ class Login extends StatelessWidget {
               shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0))),
             ),
-            child: const Text("Button text"),
+            child: const Text("Login"),
           ),
           const SizedBox(
             height: 25,

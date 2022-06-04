@@ -16,7 +16,7 @@ class HomeblocBloc extends Bloc<HomeblocEvent, HomeblocState> {
   HomeblocBloc(
     this._giojitApi,
   ) : super(HomeblocState.initial()) {
-    on<_GetArtivaticApi>((event, emit) async {
+    on<_GetGioApi>((event, emit) async {
       emit(state.copyWith(isLoading: true, apiFailureOrSuccessOption: none()));
       final Either<MainFailure, List<GiojitApiModel>> apiResponce =
           await _giojitApi.getGiojitApis();

@@ -18,8 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$HomeblocEventTearOff {
   const _$HomeblocEventTearOff();
 
-  _GetArtivaticApi getArtivaticApi() {
-    return const _GetArtivaticApi();
+  _GetGioApi getGiojitApi() {
+    return const _GetGioApi();
   }
 }
 
@@ -30,33 +30,33 @@ const $HomeblocEvent = _$HomeblocEventTearOff();
 mixin _$HomeblocEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getArtivaticApi,
+    required TResult Function() getGiojitApi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getArtivaticApi,
+    TResult Function()? getGiojitApi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getArtivaticApi,
+    TResult Function()? getGiojitApi,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetArtivaticApi value) getArtivaticApi,
+    required TResult Function(_GetGioApi value) getGiojitApi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetArtivaticApi value)? getArtivaticApi,
+    TResult Function(_GetGioApi value)? getGiojitApi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetArtivaticApi value)? getArtivaticApi,
+    TResult Function(_GetGioApi value)? getGiojitApi,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -80,38 +80,36 @@ class _$HomeblocEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GetArtivaticApiCopyWith<$Res> {
-  factory _$GetArtivaticApiCopyWith(
-          _GetArtivaticApi value, $Res Function(_GetArtivaticApi) then) =
-      __$GetArtivaticApiCopyWithImpl<$Res>;
+abstract class _$GetGioApiCopyWith<$Res> {
+  factory _$GetGioApiCopyWith(
+          _GetGioApi value, $Res Function(_GetGioApi) then) =
+      __$GetGioApiCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$GetArtivaticApiCopyWithImpl<$Res>
-    extends _$HomeblocEventCopyWithImpl<$Res>
-    implements _$GetArtivaticApiCopyWith<$Res> {
-  __$GetArtivaticApiCopyWithImpl(
-      _GetArtivaticApi _value, $Res Function(_GetArtivaticApi) _then)
-      : super(_value, (v) => _then(v as _GetArtivaticApi));
+class __$GetGioApiCopyWithImpl<$Res> extends _$HomeblocEventCopyWithImpl<$Res>
+    implements _$GetGioApiCopyWith<$Res> {
+  __$GetGioApiCopyWithImpl(_GetGioApi _value, $Res Function(_GetGioApi) _then)
+      : super(_value, (v) => _then(v as _GetGioApi));
 
   @override
-  _GetArtivaticApi get _value => super._value as _GetArtivaticApi;
+  _GetGioApi get _value => super._value as _GetGioApi;
 }
 
 /// @nodoc
 
-class _$_GetArtivaticApi implements _GetArtivaticApi {
-  const _$_GetArtivaticApi();
+class _$_GetGioApi implements _GetGioApi {
+  const _$_GetGioApi();
 
   @override
   String toString() {
-    return 'HomeblocEvent.getArtivaticApi()';
+    return 'HomeblocEvent.getGiojitApi()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _GetArtivaticApi);
+        (other.runtimeType == runtimeType && other is _GetGioApi);
   }
 
   @override
@@ -120,27 +118,27 @@ class _$_GetArtivaticApi implements _GetArtivaticApi {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getArtivaticApi,
+    required TResult Function() getGiojitApi,
   }) {
-    return getArtivaticApi();
+    return getGiojitApi();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getArtivaticApi,
+    TResult Function()? getGiojitApi,
   }) {
-    return getArtivaticApi?.call();
+    return getGiojitApi?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getArtivaticApi,
+    TResult Function()? getGiojitApi,
     required TResult orElse(),
   }) {
-    if (getArtivaticApi != null) {
-      return getArtivaticApi();
+    if (getGiojitApi != null) {
+      return getGiojitApi();
     }
     return orElse();
   }
@@ -148,34 +146,34 @@ class _$_GetArtivaticApi implements _GetArtivaticApi {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_GetArtivaticApi value) getArtivaticApi,
+    required TResult Function(_GetGioApi value) getGiojitApi,
   }) {
-    return getArtivaticApi(this);
+    return getGiojitApi(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetArtivaticApi value)? getArtivaticApi,
+    TResult Function(_GetGioApi value)? getGiojitApi,
   }) {
-    return getArtivaticApi?.call(this);
+    return getGiojitApi?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_GetArtivaticApi value)? getArtivaticApi,
+    TResult Function(_GetGioApi value)? getGiojitApi,
     required TResult orElse(),
   }) {
-    if (getArtivaticApi != null) {
-      return getArtivaticApi(this);
+    if (getGiojitApi != null) {
+      return getGiojitApi(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetArtivaticApi implements HomeblocEvent {
-  const factory _GetArtivaticApi() = _$_GetArtivaticApi;
+abstract class _GetGioApi implements HomeblocEvent {
+  const factory _GetGioApi() = _$_GetGioApi;
 }
 
 /// @nodoc

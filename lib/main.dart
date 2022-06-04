@@ -13,7 +13,7 @@ Future<void> main() async {
     providers: [
       BlocProvider(
         create: (context) =>
-            getIt<HomeblocBloc>()..add(const HomeblocEvent.getArtivaticApi()),
+            getIt<HomeblocBloc>()..add(const HomeblocEvent.getGiojitApi()),
       )
     ],
     child: const MyApp(),
