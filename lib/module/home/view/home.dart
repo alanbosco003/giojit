@@ -12,8 +12,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // BlocProvider.of<SearchBloc>(context).add(const SearchEvent.initialze());
-    BlocProvider.of<HomeblocBloc>(context)
-        .add(const HomeblocEvent.getArtivaticApi());
+    // BlocProvider.of<HomeblocBloc>(context)
+    //     .add(const HomeblocEvent.getArtivaticApi());
     return Scaffold(
       appBar: AppBar(
           elevation: 0,
@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
             return const ShowLoading();
           }
           //showing the list after the data is fetched.
-          return const ArtivaticList();
+          return GiogitList(state.apimodel);
         },
       ),
     );

@@ -12,7 +12,8 @@ Future<void> main() async {
   runApp(MultiBlocProvider(
     providers: [
       BlocProvider(
-        create: (context) => getIt<HomeblocBloc>(),
+        create: (context) =>
+            getIt<HomeblocBloc>()..add(const HomeblocEvent.getArtivaticApi()),
       )
     ],
     child: const MyApp(),

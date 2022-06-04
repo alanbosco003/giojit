@@ -14,6 +14,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Login"),
       ),
@@ -21,24 +22,52 @@ class Login extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          TextField(
-            decoration: const InputDecoration(labelText: 'Username'),
-            controller: username,
+          Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            child: TextField(
+              decoration: const InputDecoration(labelText: 'Username'),
+              controller: username,
+            ),
           ),
-          TextField(
-            decoration: const InputDecoration(labelText: 'Password'),
-            controller: password,
+          Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            child: TextField(
+              decoration: const InputDecoration(labelText: 'Password'),
+              controller: password,
+            ),
           ),
-          TextButton(
-              child: const Text("Login"),
-              onPressed: () {
-                if (username.text.trim() == password.text.trim()) {
-                  Navigator.pushReplacementNamed(context, '/home');
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text("“Invalid credentials”")));
-                }
-              }),
+          const SizedBox(
+            height: 25,
+          ),
+          OutlinedButton(
+            onPressed: () {
+              if (username.text.trim() == password.text.trim()) {
+                Navigator.pushReplacementNamed(context, '/home');
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text("“Invalid credentials”")));
+              }
+            },
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0))),
+            ),
+            child: const Text("Button text"),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          OutlinedButton(
+            onPressed: () {
+              username.clear();
+              password.clear();
+            },
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0))),
+            ),
+            child: const Text("Clear"),
+          ),
         ],
       ),
     );
